@@ -68,8 +68,8 @@ struct ArtView: View {
         Divider()
             HStack{
             
-                Text("Rating: ")
-                   .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                /*Text("Rating: ")
+                   .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)*/
                 var starRating = art.rating
                 let count = [1...starRating]
                   
@@ -77,6 +77,7 @@ struct ArtView: View {
                     Image(systemName: "star")
                 }
                 
+                Spacer()
                 //Text("\(starRating)")
                 //Image(systemName: "star")
                     
